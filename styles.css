@@ -1,0 +1,52 @@
+.cabecera{
+ text-align: center;
+ padding: 18px 12px;   
+}
+
+.titulo{
+    margin: 0;
+}
+
+.subtitulo{
+    margin: 6px 0 0;
+    text-decoration: underline;
+}
+
+.formulario{
+    display: grid;
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.contenedor{
+    background: #fff;
+    border-radius: 14 px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.input{
+    padding: 10px 12px;
+    border: 1px solid #cfd6dd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input:focus{
+    border-color: #2d6cdf;
+    box-shadow: 0 0 0 3px rgb(45,108,223,0.18);
+}
+
+.mensaje{
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.mensaje.error{
+    color: red;
+}
+
+.mensaje.correcto{
+    color: green;
+}

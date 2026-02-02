@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Integradora 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <h1 class="titulo">Lista de supermercado</h1>
+        <p class="subtitulo">Agrega los productos que mas te gusten, marcalos como comprados y guarda.</p>
+    </header>
+    
+    <main>
+        <section class="contenedor" id="contenedor">
+            <h2>Lista de la compra</h2>
+            <form class="formulario"></form>
+            <div>
+                <label for="nombre-producto">Producto: </label>
+                <input type="text"
+                id="nombre-producto"
+                class="input"
+                placeholder="Ej: Leche"
+                />
+            </div>
+            <div>
+                <label for="cantidad-producto">Cantidad: </label>
+                <input type="nunber"
+                id="cantidad-producto"
+                class="input"
+                placeholder="1"
+                />
+            </div>
+            <button type="submit" class="btn btn-primary" id="agregar">
+                Agregar
+            </button>
+
+            <p id="mensaje" class="mensaje">Mensaje de prueba</p>
+        </section>
+    </main>
+
+</body>
+</html>
