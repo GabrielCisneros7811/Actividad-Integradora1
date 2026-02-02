@@ -75,4 +75,63 @@
 
 .footer{
     text-align: center;
+    padding: 18px 12px;
+}
+
+.pagina{
+    display: flex;
+    justify-content: center;
+    padding: 18px 12px 28px;
+}
+
+.section-titulo{
+    margin: 0 0 12px;
+}
+
+.field{
+    display: flex; 
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contadores{
+    display: flex;
+    gap: 10px;
+    margin: 14px 0;
+    flex-wrap: wrap;
+}
+
+.contador{
+    background-color: #f7f9fb;
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contador-titulo{
+    opacity: 0.75;
+}
+
+.contador_valor{
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.lista{
+    margin-top: 10px;
+}
+
+.lista-titulo{
+    margin: 0 0 10px;
+}
+
+.lista-productos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
 }

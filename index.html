@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <header class="cabecera">
         <h1 class="titulo">Lista de supermercado</h1>
         <p class="subtitulo">Agrega los productos que mas te gusten, marcalos como comprados y guarda.</p>
     </header>
     
-    <main>
+    <main class="pagina">
         <section class="contenedor" id="contenedor">
-            <h2>Lista de la compra</h2>
-            <form class="formulario"></form>
-            <div>
+
+            <h2 class="section-titulo">Lista de la compra</h2>
+
+            <form class="formulario" id="formulario-producto"></form>
+
+            <div class="field">
                 <label for="nombre-producto">Producto: </label>
                 <input type="text"
                 id="nombre-producto"
@@ -24,7 +26,8 @@
                 placeholder="Ej: Leche"
                 />
             </div>
-            <div>
+
+            <div class="field">
                 <label for="cantidad-producto">Cantidad: </label>
                 <input type="nunber"
                 id="cantidad-producto"
@@ -32,34 +35,41 @@
                 placeholder="1"
                 />
             </div>
+
             <button type="submit" class="btn btn-primary" id="agregar">
                 Agregar
             </button>
 
-            <p id="mensaje" class="mensaje">Mensaje de prueba</p>
+            <p id="mensaje" class="mensaje"></p>
 
             <section class="contadores" id="contadores">
+
                 <div class="contador">
-                <span class="contador1">Total</span>
-                <span id="contador-total">0</span>
+                <span class="contador-titulo">Total: </span>
+                <span id="contador-total" class="contador_valor">0</span>
                 </div>
-                 <div>
-                 <span id="contador-comprados">Comprados</span>
-                <span class="contador">0</span>
+
+                <div class="contador">
+                <span class="contador-titulo">Comprados: </span>
+                <span id="contador-compras" class="contador_valor">0</span>
                 </div>
-                  <div>
-                 <span id="contador-pendientes">Pendiente</span>
-                <span class="contador">0</span>
+
+                <div class="contador">
+                <span class="contador-titulo">Pendiente: </span>
+                <span id="contador-pendiente" class="contador_valor">0</span>
                 </div>
             </section>
 
-            <section>
-                <h3>Productos comprados</h3>
+            <section class="lista">
+
+                <h3 class="lista-titulo">Productos comprados</h3>
+
                 <ul id="lista-productos" class="lista-productos"></ul>
 
                 <button id="borrar" class="btn btn-primary" type="button">
                     Eliminar todo
                 </button>
+
             </section>
         </section>
     </main>
@@ -67,7 +77,7 @@
     <footer class="footer">
         <p>Actividad Integradora # 1 - Lista de supermercado . Guardado con LocalStorage</p>
     </footer>
-    <script src="scripts.js"></script>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
