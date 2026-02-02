@@ -17,6 +17,7 @@
     gap: 12px;
     align-items: end;
     margin-bottom: 10px;
+    grid-template-columns: 1fr 160px 140px;
 }
 
 .contenedor{
@@ -49,4 +50,29 @@
 
 .mensaje.correcto{
     color: green;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 12px;
+}
+
+.btn:hover{
+    filter: brightness(0.96);
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.14);
+}
+
+.btn.primary{
+    background-color: #2d6cdf; color: white;
+}
+
+.footer{
+    text-align: center;
 }

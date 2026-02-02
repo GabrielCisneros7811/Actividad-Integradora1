@@ -37,8 +37,37 @@
             </button>
 
             <p id="mensaje" class="mensaje">Mensaje de prueba</p>
+
+            <section class="contadores" id="contadores">
+                <div class="contador">
+                <span class="contador1">Total</span>
+                <span id="contador-total">0</span>
+                </div>
+                 <div>
+                 <span id="contador-comprados">Comprados</span>
+                <span class="contador">0</span>
+                </div>
+                  <div>
+                 <span id="contador-pendientes">Pendiente</span>
+                <span class="contador">0</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>Productos comprados</h3>
+                <ul id="lista-productos" class="lista-productos"></ul>
+
+                <button id="borrar" class="btn btn-primary" type="button">
+                    Eliminar todo
+                </button>
+            </section>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>Actividad Integradora # 1 - Lista de supermercado . Guardado con LocalStorage</p>
+    </footer>
+    <script src="scripts.js"></script>
 
 </body>
 </html>
